@@ -1,0 +1,18 @@
+{
+  "brand": "Khe Nâu",
+  "trade": "cafe / craft coffee roastery",
+  "searched": true,
+  "date": "2026-11-18",
+  "queries": [
+    {
+      "query": "\"Khe Nâu\" coffee OR \"cà phê\"",
+      "conflict": false,
+      "summary": "No existing cafe, roastery, or coffee business named Khe Nâu in top results (search suggested Khe Sanh coffee region and unrelated Tiệm Cà Phê Nâu)."
+    },
+    {
+      "query": "khenau.com OR khenau.vn",
+      "conflict": false,
+      "summary": "No active brand or site on khenau.com or khenau.vn."
+    }
+  ]
+}
