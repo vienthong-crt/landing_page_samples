@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Đặt lịch thành công | Nha khoa Gia đình An Tâm Quận 7</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0A5C5F" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body { padding-bottom: 0; background: var(--ivory); min-height: 100vh; }
+    .ty { max-width: 620px; margin: 0 auto; padding: 48px 20px 64px; text-align: center; }
+    .ty__check {
+      width: 72px; height: 72px; margin: 0 auto 20px; border-radius: 50%;
+      display: grid; place-items: center;
+      background: var(--teal-700); color: #FFFFFF;
+      box-shadow: var(--sh-md);
+      animation: fadeUp .4s cubic-bezier(.22, 1, .36, 1);
+    }
+    .ty__check svg { width: 34px; height: 34px; stroke-width: 2.5; }
+    @keyframes fadeUp { from { transform: translateY(8px); opacity: 0; } to { transform: none; opacity: 1; } }
+    .ty h1 { font-size: clamp(25px, 5vw, 34px); font-weight: 700; text-wrap: balance; }
+    .ty__lead { margin-top: 12px; font-size: 16.5px; }
+    .ty__lead b { color: var(--teal-700); }
+    .ty__code {
+      margin: 26px auto 0; background: #FFFFFF; border-radius: 18px; padding: 24px 22px;
+      box-shadow: var(--sh-md); border: 1.5px solid var(--coral-200);
+    }
+    .ty__code small { display: block; font-weight: 600; color: var(--coral-700); font-size: 13.5px; }
+    .ty__code strong {
+      display: block; margin: 8px 0 6px;
+      font-size: clamp(26px, 7vw, 36px); font-weight: 700; letter-spacing: .05em;
+      color: var(--teal-900); font-variant-numeric: tabular-nums;
+    }
+    .ty__code p { font-size: 15px; }
+    .ty__code p b { color: var(--teal-700); }
+    .ty__copy { margin-top: 14px; }
+    .ty__steps { margin-top: 28px; text-align: left; display: grid; gap: 12px; }
+    .ty__step {
+      display: flex; gap: 14px; align-items: flex-start;
+      background: #FFFFFF; padding: 16px; border-radius: 14px;
+      box-shadow: var(--sh-xs); border: 1px solid var(--line);
+    }
+    .ty__step span {
+      flex: none; width: 32px; height: 32px; border-radius: 50%;
+      display: grid; place-items: center; font-weight: 700; font-size: 14px;
+      color: #FFFFFF; font-variant-numeric: tabular-nums;
+    }
+    .ty__step:nth-child(1) span { background: var(--teal-700); }
+    .ty__step:nth-child(2) span { background: var(--amber-700); }
+    .ty__step:nth-child(3) span { background: var(--coral-700); }
+    .ty__step strong { color: var(--ink); display: block; font-weight: 600; }
+    .ty__ctas { margin-top: 26px; display: grid; gap: 12px; }
+    .ty__back { display: inline-block; margin-top: 24px; color: var(--teal-700); font-weight: 600; text-decoration: underline; }
+    @media (min-width: 560px) { .ty__ctas { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    </defs>
+  </svg>
+
+  <main class="ty">
+    <div class="ty__check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></div>
+    <h1>Cảm ơn <em class="serif-accent js-name">bạn</em>, lịch hẹn ưu đãi đã được ghi nhận</h1>
+    <p class="ty__lead">Lễ tân Nha khoa An Tâm sẽ gọi xác nhận khung giờ trong <b>khoảng 5 phút</b> (khung giờ làm việc 8:00 – 20:00).</p>
+
+    <div class="ty__code">
+      <small>Mã ưu đãi khai trương của gia đình bạn</small>
+      <strong class="js-code">ANTAM-KHAITRUONG</strong>
+      <p>Gói đã đăng ký: <b class="js-need">Khám + Chụp phim X‑Quang 3D 0đ</b></p>
+      <button class="btn btn--ghost btn--sm ty__copy js-copy"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-copy"/></svg><span>Sao chép mã ưu đãi</span></button>
+      <p class="sr-only" aria-live="polite" id="copy-status"></p>
+    </div>
+
+    <div class="ty__steps">
+      <div class="ty__step"><span>1</span><p><strong>Nghe máy xác nhận từ lễ tân</strong>Số hotline gọi đến: 0909 123 456 – để chốt ngày giờ khám thuận tiện nhất.</p></div>
+      <div class="ty__step"><span>2</span><p><strong>Lưu vị trí phòng khám &amp; kết nối Zalo OA</strong>Nhận tin nhắn nhắc lịch hẹn tự động và sổ bảo hành điện tử qua Zalo.</p></div>
+      <div class="ty__step"><span>3</span><p><strong>Đọc mã ưu đãi tại quầy lễ tân</strong>Địa chỉ: 123 Nguyễn Thị Thập, P. Tân Phú, Quận 7 (có bãi đậu ô tô miễn phí).</p></div>
+    </div>
+
+    <div class="ty__ctas">
+      <a class="btn btn--ghost btn--lg" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=123+Nguyen+Thi+Thap+Quan+7+Ho+Chi+Minh"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>Lưu chỉ đường</a>
+      <a class="btn btn--zalo btn--lg js-contact" target="_blank" rel="noopener" href="https://zalo.me/0909123456"><span class="zalo-mark" aria-hidden="true">Zalo</span>Kết nối Zalo OA</a>
+    </div>
+
+    <a href="index.html" class="ty__back">← Quay lại trang chủ Nha khoa An Tâm</a>
+  </main>
+
+  <script>
+    (function () {
+      var p = new URLSearchParams(location.search);
+      var lead = {};
+      try { lead = JSON.parse(sessionStorage.getItem('antam_lead') || '{}'); } catch (e) {}
+      var rawCode = p.get('code') || lead.code || '';
+      var validCode = /^ANTAM-[A-Z0-9]{5}$/.test(rawCode) ? rawCode : 'ANTAM-KHAITRUONG';
+      document.querySelector('.js-code').textContent = validCode;
+      if (lead.name) document.querySelector('.js-name').textContent = lead.name.split(' ').slice(-1)[0];
+      if (lead.need) document.querySelector('.js-need').textContent = lead.need;
+
+      if (lead.pending) {
+        var val = Number(lead.value) || 500000;
+        if (window.fbq) fbq('track', 'Lead', { content_name: lead.need, value: val, currency: 'VND' });
+        if (window.gtag) gtag('event', 'generate_lead', { currency: 'VND', value: val, offer: lead.need });
+        lead.pending = false;
+        try { sessionStorage.setItem('antam_lead', JSON.stringify(lead)); } catch (e) {}
+      }
+
+      document.querySelector('.js-copy').addEventListener('click', function () {
+        var btn = this, status = document.getElementById('copy-status');
+        (navigator.clipboard ? navigator.clipboard.writeText(validCode) : Promise.reject()).then(function () {
+          btn.querySelector('span').textContent = 'Đã sao chép mã!';
+          status.textContent = 'Đã sao chép mã ' + validCode;
+          setTimeout(function () { btn.querySelector('span').textContent = 'Sao chép mã ưu đãi'; }, 2000);
+        }).catch(function () { status.textContent = 'Không sao chép được, vui lòng lưu lại mã trên màn hình.'; });
+      });
+    })();
+  </script>
+</body>
+</html>
